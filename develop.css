@@ -1,11 +1,19 @@
-/* Incluir el relleno y el borde en el ancho y alto total de un elemento */
+/* todo Incluir el relleno y el borde en el ancho y alto total de un elemento */
 * {
     box-sizing: border-box;
 }
 
-h2 {
-    font-family: Parisina;
-}
+
+/* Estilar la cabecera */
+body {
+    background-image: url(img/fondo.jpg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    }
+
 
 /* Eliminar los márgenes y el relleno de la lista */
 ul {
@@ -72,13 +80,7 @@ ul li.checked::before {
     color: white;
 }
 
-/* Estilar la cabecera */
-.header {
-    background-color: #d8aba8;
-    padding: 30px 40px;
-    color: white;
-    text-align: center;
-}
+
 
 /* Limpiar los flotantes después de la cabecera */
 .header:after {

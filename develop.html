@@ -4,24 +4,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="shortcut icon" href="favicon.ico" type="image/> -->
+    <link rel="icon" href="img/LeiaPNG.png">
     <link rel="stylesheet" href="develop.css">
     <title><List-AG></List-AG></title>
 </head>
 
+<nav class="navi">
+    <a class="nav-link" href="#Register">Register</a>
+    <a class="nav-link" href="#Log In">Log In</a>
+</nav>
+
 <body>
-
-    <img src="" alt="">
-    <div id="myDIV" class="header">
-        <h2> AG - List </h2>
-        <input type="text" id="myInput" placeholder="Añade nueva tarea">
-        <span onclick="newElement()" class="addBtn"> Añadir </span>
-        <!-- <button type="submit" onclick="newElement()" class="addBtn">Añadir</button> -->
+    <div class="title">
+        <h1>To Do List Pets
+        </h1>
     </div>
+    <section class="contentlist">
+        <div id="myDIV" class="header">
+            <h2 class="category"> Vet </h2>
+            <input type="text" id="myInput" placeholder="Add New Homework">
+            <!-- <span onclick="newElement()" class="addBtn"> Add </span> -->
+            <button type="submit" onclick="newElement()" class="addBtn">Add</button>
+        </div>
 
-    <ul id="myUL" class="checked">
-        <li> </li>
-    </ul>
+        <ul id="myUL" class="checked">
+            <li> </li>
+        </ul>
+
+        <div id="myDIV" class="header">
+            <h2 class="category"> Walks </h2>
+            <input type="text" id="myInput" placeholder="Add New Homework">
+            <!-- <span onclick="newElement()" class="addBtn"> Add </span> -->
+            <button type="submit" onclick="newElement()" class="addBtn">Add</button>
+        </div>
+
+        <ul id="myUL" class="checked">
+            <li> </li>
+        </ul>
+
+
+        <div id="myDIV" class="header">
+            <h2 class="category"> Meals and Snacks </h2>
+            <input type="text" id="myInput" placeholder="Add New Homework">
+            <!-- <span onclick="newElement()" class="addBtn"> Add </span> -->
+            <button type="submit" onclick="newElement()" class="addBtn">Add</button>
+        </div>
+
+        <ul id="myUL" class="checked">
+            <li> </li>
+        </ul>
+
+        <div id="myDIV" class="header">
+            <h2 class="category"> Showers </h2>
+            <input type="text" id="myInput" placeholder="Add New Homework">
+            <!-- <span onclick="newElement()" class="addBtn"> Add </span> -->
+            <button type="submit" onclick="newElement()" class="addBtn">Add</button>
+        </div>
+
+        <ul id="myUL" class="checked">
+            <li> </li>
+        </ul>
+
+
+    </section>
+
     <script src="develop.js"></script>
 
 </body>
