@@ -1,6 +1,7 @@
 /* todo Incluir el relleno y el borde en el ancho y alto total de un elemento */
 * {
     box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 
@@ -12,8 +13,35 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    }
+}
 
+nav {
+    background-color: #A6A6A6;
+    padding: 10px;
+    width: 100%;
+    gap: 100px ;
+    /* text-align: center; */
+    font-size: 2vh;
+    
+}
+
+.optionnav {
+    background-color: rgba(97, 57, 121, 0.4);
+    border-radius: 7vh;
+    
+    
+}
+
+.optionnav:hover {
+    background-color: rgba(97, 57, 121, 0.7);
+}
+
+.logolist {
+   padding-top: 10px;
+    padding-right: 110vh;
+    border-radius: 0px;
+
+}
 
 /* Eliminar los márgenes y el relleno de la lista */
 ul {
