@@ -55,9 +55,5 @@ function newElement() {
   }
 }
 
-  let updateStats = ()=>{
-    let element = list.querySelectorAll('div');
-    let checkbox = document.querySelectorAll('input[type="checkbox"]:checked');
-    stats.innerHTML = `Tareas pendientes: ${element.length} Completadas: ${checkbox.length}`;
-};
+
 

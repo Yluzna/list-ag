@@ -1,21 +1,21 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 body {
     background-image: url(img/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: center;
+
 }
 
 nav {
@@ -47,11 +47,17 @@ h1 {
 }
 
 .logolist {
-    padding-right: 110vh;
+    /* padding-right: 110vh; */
     border-radius: 0px;
     height: 50px;
     justify-content: space-between;
     z-index: 1;
+}
+
+.contentlist {
+    padding: 10vh;
+    width: 350px;
+    height: 200px;
 }
 
 /* Eliminar los márgenes y el relleno de la lista */
@@ -86,9 +92,19 @@ ul li:hover {
     background: #ddd;
 }
 
+li {
+    border: none;
+    background-color: #A6A6A6;
+    border-radius: 10px;
+    width: 75%;
+    padding: 10px;
+    float: left;
+    font-size: 16px;
+}
+
 /* Cuando se hace clic en un elemento, añadir un color de fondo y tachar el texto */
 ul li.checked {
-    background: #888;
+    background: #613979;
     color: #fff;
     text-decoration: line-through;
 }
@@ -120,10 +136,12 @@ ul li.checked::before {
     color: white;
 }
 
-
+.contentcategory {
+    padding: 20px;
+}
 
 /* Limpiar los flotantes después de la cabecera */
-.header:after {
+.contentcategory:after {
     content: "";
     display: table;
     clear: both;
@@ -133,7 +151,8 @@ ul li.checked::before {
 input {
     margin: 0;
     border: none;
-    border-radius: 0;
+    background-color: #A6A6A6;
+    border-radius: 10px;
     width: 75%;
     padding: 10px;
     float: left;
@@ -143,20 +162,20 @@ input {
 /* Estilar el botón "Añadir" */
 .addBtn {
     padding: 10px;
-    width: 25%;
-    background: #d9d9d9;
-    color: #555;
+    width: 17%;
+    background-color: rgba(97, 57, 121, 0.4);
+    color: #FFFFFF;
+    border: none;
     float: left;
     text-align: center;
-    font-size: 16px;
+    font-size: 10px;
     cursor: pointer;
     transition: 0.3s;
-    border-radius: 0;
+    border-radius: 10px;
 }
 
 .addBtn:hover {
-    background-color: #bbb;
+    background-color: rgba(97, 57, 121, 0.7);
 }
 
 /* RESPONSIVE MEDIA QUERIES */
-
