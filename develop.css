@@ -136,6 +136,11 @@ ul li.checked::before {
     color: white;
 }
 
+.category {
+    background-color: #363636;
+    border-radius: 10px;
+}
+
 .contentcategory {
     padding: 20px;
 }
