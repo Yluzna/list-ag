@@ -6,7 +6,7 @@
 }
 
 body {
-    background-image: url(img/fondo2.jpg);
+    background-image: url(img-home/fondo2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -26,8 +26,7 @@ header {
     justify-content: space-between;
     align-items: center;
     z-index: 100;
-    
-}
+    }
 
 /* nav */
 nav {
