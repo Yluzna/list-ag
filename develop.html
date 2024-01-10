@@ -6,29 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="img/LeiaPNG.png">
     <link rel="stylesheet" href="develop.css">
-    <title><List-AG></List-AG></title>
+    <title>Pet List Task</title>
 </head>
 
 <body>
     <header>
         <nav>
             <div class="logo">
-              <a href="#"><img src="img/Logo.png" alt="Logo"></a>
+                <a href="#"><img src="img/Logo.png" alt="Logo"></a>
             </div>
             <div class="menu">
-              <a href=" " class="register">Register</a>
-              <a href=" " class="login">Log In</a>
+                <a href=" " class="register">Inicio</a>
             </div>
-          </nav>
-            </header>
+        </nav>
+    </header>
 
-<h1 class="title"> Pet List Task </h1>
+    <h1 class="title"> Pet List Task </h1>
 
+    <div id="fecha"></div>
     <section class="contentlist">
 
         <div class="contentcategory">
-            <h2 class="category"> Vet </h2>
-            <input type="text" id="vet" placeholder="Add New Homework">
+            <div class="contcategory">
+                <h2 class="category"> Vet </h2>
+            </div>
+            <input type="text" id="vet" placeholder="Add New">
             <button type="submit" onclick="newElementVet()" class="addBtn">Add</button>
         </div>
         <ul id="myVet" class="checked">
@@ -36,8 +38,10 @@
         </ul>
 
         <div class="contentcategory">
-            <h2 class="category"> Walks </h2>
-            <input type="text" id="walks" placeholder="Add New Homework">
+            <div class="contcategory">
+                <h2 class="category"> Walks </h2>
+            </div>
+            <input type="text" id="walks" placeholder="Add New">
             <button type="submit" onclick="newElementWalks()" class="addBtn">Add</button>
         </div>
         <ul id="myWalks" class="checked">
@@ -45,8 +49,10 @@
         </ul>
 
         <div class="contentcategory">
-            <h2 class="category"> Meals and Snacks </h2>
-            <input type="text" id="meals" placeholder="Add New Homework">
+            <div class="contcategory">
+                <h2 class="category"> Meals and Snacks </h2>
+            </div>
+            <input type="text" id="meals" placeholder="Add New">
             <button type="submit" onclick="newElementMeals()" class="addBtn">Add</button>
         </div>
         <ul id="myMeals" class="checked">
@@ -54,8 +60,10 @@
         </ul>
 
         <div class="contentcategory">
-            <h2 class="category"> Showers </h2>
-            <input type="text" id="showers" placeholder="Add New Homework">
+            <div class="contcategory">
+                <h2 class="category"> Showers </h2>
+            </div>
+            <input type="text" id="showers" placeholder="Add New">
             <button type="submit" onclick="newElementShowers()" class="addBtn">Add</button>
         </div>
         <ul id="myShowers" class="checked">

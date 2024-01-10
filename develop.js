@@ -130,3 +130,9 @@ function newElementShowers() {
     }
   }
 }
+
+//fecha del dìa
+
+const FECHA = new Date ()
+fecha.innerHTML = FECHA.toLocaleDateString('es-ES',{weekday: 'long', month: 'long', day:'numeric'})
+
