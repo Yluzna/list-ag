@@ -4,13 +4,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="shortcut icon" href="favicon.ico" type="image/> -->
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="funtion.js">
-    <title><List-AG></List-AG></title>
+    <link rel="icon" href="img-page2/LeiaPNG.png">
+    <link rel="stylesheet" href="page2.css">
+    <title>Pet List Task</title>
 </head>
 
 <body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="#"><img src="img-page2/Logo.png" alt="Logo"></a>
+            </div>
+            <div class="menu">
+                <a onclick="redirectToPageList()" href=" " class="register">Inicio</a>
+            </div>
+        </nav>
+    </header>
+
+    <h1 class="title"> Pet List Task </h1>
+
+    <div id="fecha"></div>
+    <section class="contentlist">
+
+        <div class="contentcategory">
+            <div class="contcategory">
+                <h2 class="category"> Vet </h2>
+            </div>
+            <input type="text" id="vet" placeholder="Add New">
+            <button type="submit" onclick="newElementVet()" class="addBtn">Add</button>
+        </div>
+        <ul id="myVet" class="checked">
+            <!-- <li></li> -->
+        </ul>
+
+        <div class="contentcategory">
+            <div class="contcategory">
+                <h2 class="category"> Walks </h2>
+            </div>
+            <input type="text" id="walks" placeholder="Add New">
+            <button type="submit" onclick="newElementWalks()" class="addBtn">Add</button>
+        </div>
+        <ul id="myWalks" class="checked">
+            <!-- <li> </li> -->
+        </ul>
+
+        <div class="contentcategory">
+            <div class="contcategory">
+                <h2 class="category"> Meals and Snacks </h2>
+            </div>
+            <input type="text" id="meals" placeholder="Add New">
+            <button type="submit" onclick="newElementMeals()" class="addBtn">Add</button>
+        </div>
+        <ul id="myMeals" class="checked">
+            <!-- <li> </li> -->
+        </ul>
+
+        <div class="contentcategory">
+            <div class="contcategory">
+                <h2 class="category"> Showers </h2>
+            </div>
+            <input type="text" id="showers" placeholder="Add New">
+            <button type="submit" onclick="newElementShowers()" class="addBtn">Add</button>
+        </div>
+        <ul id="myShowers" class="checked">
+            <!-- <li> </li> -->
+        </ul>
+
+    </section>
+
+    <img src="img-page2/LeiaPNG.png" alt="LeiaPNG">
+    <script src="page2.js"></script>
 
 </body>
 
