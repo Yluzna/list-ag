@@ -1,11 +1,12 @@
 * {
+    box-sizing: 0;
     margin: 0;
     padding: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 body {
-    background-image: url(img/fondo.jpg);
+    background-image: url(img/fondo2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -15,55 +16,76 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-
 }
 
-nav {
-    display: flex;
-    background-color: #A6A6A6;
-    padding: 10px;
+header {
+    top: 0;
     width: 100%;
-    height: 100%;
-    font-size: 2vh;
-
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    
 }
 
-h1 {
-    text-align: center;
-
-}
-
-.optionnav {
-    text-align: center;
-    padding: 2px;
+/* nav */
+nav {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #A6A6A6;
+    border-radius: 10px;
+    padding: 10px;
+  }
+  
+  .logo img {
+    width: 50px;
+    height: auto;
+  }
+  
+  .menu a {
+    color: #FFFFFF;
+    text-decoration: none;
+    margin: 10px;
+  }
+  
+  .register {
     background-color: rgba(97, 57, 121, 0.4);
-    border-radius: 7vh;
-    height: 40px;
-    width: 100px;
-}
+    border: 2px solid #6139;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+  
+  .login {
+    background-color: rgba(97, 57, 121, 0.4);
+    border: 2px solid #6139;
+    padding: 8px 18px;
+    border-radius: 5px;
+  }
 
-.optionnav:hover {
+  .register:hover {
     background-color: rgba(97, 57, 121, 0.7);
 }
 
-.logolist {
-    /* padding-right: 110vh; */
-    border-radius: 0px;
-    height: 50px;
-    justify-content: space-between;
-    z-index: 1;
+.login:hover {
+    background-color: rgba(97, 57, 121, 0.7);
 }
+
+  /* titulo */
+
+.title {
+    padding:50px;
+    font-size: 40px;
+}
+
+/* lista */
 
 .contentlist {
     padding: 10vh;
-    width: 350px;
-    height: 200px;
-}
-
-/* Eliminar los márgenes y el relleno de la lista */
-ul {
-    margin: 0;
-    padding: 0;
+    width: 82%
 }
 
 /* Estilar los elementos de la lista */
@@ -82,34 +104,30 @@ ul li {
     user-select: none;
 }
 
-/* Establecer un color diferente para todos los elementos de la lista impares (rayas de cebra) */
-ul li:nth-child(odd) {
-    background: #f9f9f9;
-}
-
-/* Color de fondo más oscuro al pasar el ratón */
-ul li:hover {
-    background: #ddd;
+ul {
+    padding: 10px;
+    margin: 0;
+    padding: 0;
 }
 
 li {
     border: none;
     background-color: #A6A6A6;
     border-radius: 10px;
-    width: 75%;
+    width: 65%;
     padding: 10px;
-    float: left;
+    float: none;
     font-size: 16px;
 }
 
-/* Cuando se hace clic en un elemento, añadir un color de fondo y tachar el texto */
+/* color a texto seleccionado */
 ul li.checked {
     background: #613979;
     color: #fff;
     text-decoration: line-through;
 }
 
-/* Añadir una marca de "comprobado" cuando se hace clic en un elemento */
+/* elemento ok al seleccionar tarea */
 ul li.checked::before {
     content: '';
     position: absolute;
@@ -123,7 +141,7 @@ ul li.checked::before {
     width: 7px;
 }
 
-/* Estilar el botón de cerrar */
+/* botón cerrar */
 .close {
     position: absolute;
     right: 0;
@@ -132,20 +150,22 @@ ul li.checked::before {
 }
 
 .close:hover {
-    background-color: #d6cbca;
+    background-color: #613979;
     color: white;
 }
 
 .category {
     background-color: #363636;
+    color: #FFFFFF;
     border-radius: 10px;
+    font-size: 20px;
 }
 
 .contentcategory {
-    padding: 20px;
+    padding: 10px;
 }
 
-/* Limpiar los flotantes después de la cabecera */
+/* campo add new homework */
 .contentcategory:after {
     content: "";
     display: table;
@@ -164,7 +184,7 @@ input {
     font-size: 16px;
 }
 
-/* Estilar el botón "Añadir" */
+/* btn add */
 .addBtn {
     padding: 10px;
     width: 17%;
@@ -182,5 +202,3 @@ input {
 .addBtn:hover {
     background-color: rgba(97, 57, 121, 0.7);
 }
-
-/* RESPONSIVE MEDIA QUERIES */

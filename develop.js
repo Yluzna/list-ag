@@ -1,5 +1,5 @@
 
-// Crear un botón de "cerrar" y añadirlo a cada elemento de la lista
+// btn cerrar en cada tarea
 var myNodelist = document.getElementsByTagName("LI");
 var i;
 for (i = 0; i < myNodelist.length; i++) {
@@ -10,7 +10,7 @@ for (i = 0; i < myNodelist.length; i++) {
   myNodelist[i].appendChild(span);
 }
 
-// Hacer clic en un botón de cerrar para ocultar el elemento de la lista actual
+// btn cerrar para eliminar tarea
 var close = document.getElementsByClassName("close");
 var i;
 for (i = 0; i < close.length; i++) {
@@ -20,7 +20,7 @@ for (i = 0; i < close.length; i++) {
   }
 }
 
-// Añadir una marca de "comprobado" al hacer clic en un elemento de la lista
+// check de realizado
 var list = document.querySelector('ul');
 list.addEventListener('click', function (ev) {
   if (ev.target.tagName === 'LI') {
@@ -28,7 +28,7 @@ list.addEventListener('click', function (ev) {
   }
 }, false);
 
-// Crear un nuevo elemento Vet de la lista al hacer clic en el botón "Añadir"
+// nuevo elemento lista vet
 function newElementVet() {
   var li = document.createElement("li");
   var inputValue = document.getElementById("vet").value;
@@ -54,7 +54,7 @@ function newElementVet() {
   }
 }
 
-// Crear un nuevo elemento Walks de la lista al hacer clic en el botón "Añadir"
+// nuevo elemento lista walks
 function newElementWalks() {
   var li = document.createElement("li");
   var inputValue = document.getElementById("walks").value;
@@ -80,7 +80,7 @@ function newElementWalks() {
   }
 }
 
-// Crear un nuevo elemento Meals de la lista al hacer clic en el botón "Añadir"
+// nuevo elemento lista meals and snacks
 function newElementMeals() {
   var li = document.createElement("li");
   var inputValue = document.getElementById("meals").value;
@@ -105,7 +105,7 @@ function newElementMeals() {
     }
   }
 }
-// Crear un nuevo elemento showers de la lista al hacer clic en el botón "Añadir"
+// nuevo elemento lista showers
 function newElementShowers() {
   var li = document.createElement("li");
   var inputValue = document.getElementById("showers").value;

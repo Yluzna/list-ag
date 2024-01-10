@@ -11,24 +11,26 @@
 
 <body>
     <header>
-
         <nav>
-            <img class="logolist" src="img/LeiaPNG.png" alt="logolist">
-            <h1>To Do List Pets
-            </h1>
-            <p class="optionnav"> Register </p>
-            <p class="optionnav"> Log In </p>
-        </nav>
-    </header>
+            <div class="logo">
+              <a href="#"><img src="img/Logo.png" alt="Logo"></a>
+            </div>
+            <div class="menu">
+              <a href=" " class="register">Register</a>
+              <a href=" " class="login">Log In</a>
+            </div>
+          </nav>
+            </header>
+
+<h1 class="title"> Pet List Task </h1>
 
     <section class="contentlist">
+
         <div class="contentcategory">
             <h2 class="category"> Vet </h2>
             <input type="text" id="vet" placeholder="Add New Homework">
-            <!-- <span onclick="newElement()" class="addBtn"> Add </span> -->
             <button type="submit" onclick="newElementVet()" class="addBtn">Add</button>
         </div>
-
         <ul id="myVet" class="checked">
             <!-- <li></li> -->
         </ul>
@@ -36,22 +38,17 @@
         <div class="contentcategory">
             <h2 class="category"> Walks </h2>
             <input type="text" id="walks" placeholder="Add New Homework">
-            <!-- <span onclick="newElement()" class="addBtn"> Add </span> -->
             <button type="submit" onclick="newElementWalks()" class="addBtn">Add</button>
         </div>
-
         <ul id="myWalks" class="checked">
             <!-- <li> </li> -->
         </ul>
 
-
         <div class="contentcategory">
             <h2 class="category"> Meals and Snacks </h2>
             <input type="text" id="meals" placeholder="Add New Homework">
-            <!-- <span onclick="newElement()" class="addBtn"> Add </span> -->
             <button type="submit" onclick="newElementMeals()" class="addBtn">Add</button>
         </div>
-
         <ul id="myMeals" class="checked">
             <!-- <li> </li> -->
         </ul>
@@ -59,17 +56,15 @@
         <div class="contentcategory">
             <h2 class="category"> Showers </h2>
             <input type="text" id="showers" placeholder="Add New Homework">
-            <!-- <span onclick="newElement()" class="addBtn"> Add </span> -->
             <button type="submit" onclick="newElementShowers()" class="addBtn">Add</button>
         </div>
-
         <ul id="myShowers" class="checked">
             <!-- <li> </li> -->
         </ul>
 
-
     </section>
 
+    <img src="img/LeiaPNG.png" alt="LeiaPNG">
     <script src="develop.js"></script>
 
 </body>
